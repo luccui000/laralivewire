@@ -15,14 +15,17 @@ class Option extends Component
     public $isFist;
     public $isLast;
 
-    public function __construct($value, $isFist = false, $isLast = false)
+    public function __construct($value = '', $isFist = false, $isLast = false)
     {
-        //
         $this->value = $value;
         $this->isFist = $isFist;
         $this->isLast = $isLast;
     }
 
+    public function selected()
+    {
+
+    }
     public function makeBorderOption()
     {
         $border = '';
