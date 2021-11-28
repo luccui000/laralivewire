@@ -1,4 +1,4 @@
-<div class="p-4">
+<div class="block w-96 overflow-x-auto">
     @php
         $users = array(
             array(
@@ -28,20 +28,14 @@
             )
         );
     @endphp
-    <table class="border-2">
-        <x-table.thead>
-            <th>#</th>
-            <th>Name</th>
-            <th>Age</th>
-        </x-table.thead>
-        <x-table.tbody>
-            @foreach($users as $user)
-                <x-table.row isEven="{{ $loop->even }}">
-                    <x-table.data>{{ $user['id'] }}</x-table.data>
-                    <x-table.data>{{ $user['name'] }}</x-table.data>
-                    <x-table.data>{{ $user['age'] }}</x-table.data>
-                </x-table.row>
-            @endforeach
-        </x-table.tbody>
+    <table class="items-center bg-transparent w-full border-collapse">
+        <thead>
+            <tr>
+                {{ $heading }}
+            </tr>
+        </thead>
+        <tbody>
+            {{ $slot }}
+        </tbody>
     </table>
 </div>

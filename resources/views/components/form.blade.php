@@ -1,3 +1,4 @@
-<div>
-    <!-- Knowing is not enough; we must apply. Being willing is not enough; we must do. - Leonardo da Vinci -->
+<div class="my-2">
+    <label for="{{ $for }}" class="text-gray-700 text-md">{{ $label }}</label>
+    {{ $slot }}
 </div>
