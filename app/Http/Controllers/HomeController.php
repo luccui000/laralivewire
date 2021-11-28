@@ -25,4 +25,11 @@ class HomeController extends Controller
     {
         return view('home');
     }
+<<<<<<< HEAD
+=======
+    public function store(Request $request)
+    {
+        dd($request->all());
+    }
+>>>>>>> master
 }

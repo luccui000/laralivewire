@@ -12,11 +12,37 @@ class Option extends Component
      * @return void
      */
     public $value;
+<<<<<<< HEAD
 
     public function __construct($value)
     {
         //
         $this->value = $value;
+=======
+    public $isFist;
+    public $isLast;
+
+    public function __construct($value = '', $isFist = false, $isLast = false)
+    {
+        $this->value = $value;
+        $this->isFist = $isFist;
+        $this->isLast = $isLast;
+    }
+
+    public function selected()
+    {
+
+    }
+    public function makeBorderOption()
+    {
+        $border = '';
+        if($this->isFist)
+            $border = 'rounded-tl rounded-tr';
+        if($this->isLast)
+            $border = 'rounded-bl rounded-br';
+
+        return $border;
+>>>>>>> master
     }
 
     /**

@@ -4,9 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 \Illuminate\Support\Facades\Auth::loginUsingId(4);
 
-
-
 Route::view('/', 'welcome');
+Route::post('/', [\App\Http\Controllers\HomeController::class, 'store'])->name('home.store');
 Route::get('/documents/{document}', [\App\Http\Controllers\DocumnentController::class, 'show']);
 Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
 Route::get('/users/request', [\App\Http\Controllers\UserController::class, 'request']);

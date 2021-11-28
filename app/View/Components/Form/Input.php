@@ -1,20 +1,20 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Form;
 
 use Illuminate\View\Component;
 
-class Select extends Component
+class Input extends Component
 {
-    public $name;
-    public $placeholder;
-
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($name, $placeholder)
+    public $placeholder;
+    public $name;
+
+    public function __construct($name = '', $placeholder = '')
     {
         $this->name = $name;
         $this->placeholder = $placeholder;
@@ -27,6 +27,6 @@ class Select extends Component
      */
     public function render()
     {
-        return view('components.select');
+        return view('components.form.input');
     }
 }
