@@ -6,14 +6,18 @@ use Illuminate\View\Component;
 
 class Form extends Component
 {
+    public $for;
+    public $label;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($for = '', $label = '')
     {
-        //
+        $this->label = $label;
+        $this->for = $for ? $for : $label;
     }
 
     /**

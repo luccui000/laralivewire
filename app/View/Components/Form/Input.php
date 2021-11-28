@@ -11,9 +11,13 @@ class Input extends Component
      *
      * @return void
      */
-    public function __construct()
+    public $placeholder;
+    public $name;
+
+    public function __construct($name = '', $placeholder = '')
     {
-        //
+        $this->name = $name;
+        $this->placeholder = $placeholder;
     }
 
     /**
