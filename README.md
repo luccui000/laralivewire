@@ -1,7 +1,7 @@
 ## Công nghệ sử dụng
 
 - [Larvel 8](https://laravel.com/)
-- [Livewire v2](https://laravel-livewire.com/)
+- [React](https://laravel-livewire.com/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Docker Container](http://dockerhub.com/)
 ## Cài đặt
