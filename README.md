@@ -4,7 +4,6 @@
 - [Livewire v2](https://laravel-livewire.com/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Docker Container](http://dockerhub.com/)
-- 
 ## Cài đặt
 **Cách 1:**
 
