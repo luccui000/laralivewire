@@ -26,5 +26,18 @@ Generate key
 
 **Cách 2: Cài đặt qua docker**
 >docker-compose up -d
-
-## Mô tả  
+## React src
+```
+.
+├── assets
+│   ├── images
+│   └── styles
+├── components
+│   ├── Example.js
+│   └── index.js
+├── features
+│   ├── Page
+│   └── index.js
+├── app.js
+└── bootstrap.js
+```
