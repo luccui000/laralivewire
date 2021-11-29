@@ -18,6 +18,11 @@
                     array('id' => 4, 'name' => 'Item 4', 'age' => 21),
                 );
             @endphp
+            <x-modal>
+                <x-slot name="header"></x-slot>
+                <x-slot name="body"></x-slot>
+                <x-slot name="footer"></x-slot>
+            </x-modal>
             <form action="{{ route('home.store') }}" method="post">
                 @csrf
                 <x-form for="email" label="Email">
