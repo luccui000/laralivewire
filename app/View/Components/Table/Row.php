@@ -19,11 +19,7 @@ class Row extends Component
     }
     public function getBg()
     {
-<<<<<<< HEAD
-        return $this->isEven ? 'bg-blue-200' : '';
-=======
         return $this->isEven ? 'bg-gray-200' : '';
->>>>>>> master
     }
 
     /**

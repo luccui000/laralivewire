@@ -12,13 +12,6 @@ class Option extends Component
      * @return void
      */
     public $value;
-<<<<<<< HEAD
-
-    public function __construct($value)
-    {
-        //
-        $this->value = $value;
-=======
     public $isFist;
     public $isLast;
 
@@ -42,7 +35,6 @@ class Option extends Component
             $border = 'rounded-bl rounded-br';
 
         return $border;
->>>>>>> master
     }
 
     /**

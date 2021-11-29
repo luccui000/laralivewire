@@ -31,7 +31,7 @@
     <table class="items-center bg-transparent w-full border-collapse">
         <thead>
             <tr>
-                {{ $heading }}
+                {{ $heading ?? '' }}
             </tr>
         </thead>
         <tbody>
