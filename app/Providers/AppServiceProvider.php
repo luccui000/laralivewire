@@ -26,9 +26,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        Builder::macro('search', function ($attribute, $searchTerm) {
-            return $this->where($attribute, 'LIKE', "%{$searchTerm}%");
-        });
         Password::default(function () {
            return Password::min(6)
                ->letters()

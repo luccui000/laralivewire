@@ -1,8 +1,8 @@
 <div>
     <td {{ $attributes->merge([
-        'class' => 'border-t-0 py-2 align-middle border-l-0 border-r-0 whitespace-nowrap text-left text-gray-800'])
+        'class' => 'border-dashed border-t border-gray-200'])
         }}
     >
-        {{ $slot }}
+        <span class="text-gray-700 px-6 py-3 flex items-center">{{ $slot }}</span>
     </td>
 </div>

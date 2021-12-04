@@ -1,4 +1,4 @@
-<div class="block w-96 overflow-x-auto">
+<div class="overflow-x-auto bg-white rounded shadow overflow-y-auto relative">
     @php
         $users = array(
             array(
@@ -28,9 +28,9 @@
             )
         );
     @endphp
-    <table class="items-center bg-transparent w-full border-collapse">
+    <table class="border-collapse table-auto w-full whitespace-no-wrap bg-white table-striped relative">
         <thead>
-            <tr>
+            <tr class="text-left">
                 {{ $heading ?? '' }}
             </tr>
         </thead>

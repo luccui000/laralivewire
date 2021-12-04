@@ -62,7 +62,6 @@
             <x-alert :message="'Hello world'" type="default" />
             <x-table></x-table>
         </div>
-        @livewireScripts
             <x-table>
                 <x-slot name="heading">
                     <x-table.heading>#</x-table.heading>
